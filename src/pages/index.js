@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar';
 import IntroSection from '../components/IntroSection';
 import Sections from '../components/Sections';
 import Cards from '../components/Card';
+import Footer from '../components/Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { homeObjOne, homeObjTwo, homeObjThree} from '../components/Sections/Data';
 
@@ -22,6 +23,7 @@ const Home = () => {
         <Sections {...homeObjTwo}/> 
         <Cards />
         <Sections {...homeObjThree}/> 
+        <Footer />
         </>
     )
 };

@@ -4,7 +4,7 @@ import { SectionContainer, SectionWrapper, SectionRow,
      Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './SectionElements';
 
 const Sections = ({lightBg, id, imgStart, topLine, lightText, 
-    headLine, description, darkText ,buttonLabel, alt}) => {
+    headLine, description, darkText, alt}) => {
     return (
         <>
             <SectionContainer lightBg={lightBg} id={id}>
@@ -15,9 +15,6 @@ const Sections = ({lightBg, id, imgStart, topLine, lightText,
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headLine}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <BtnWrap>
-                                
-                                </BtnWrap>
                             </TextWrapper>
                         </Column1>
                         <Column2>

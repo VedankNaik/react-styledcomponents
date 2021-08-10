@@ -3,9 +3,9 @@ import { Link as LinkRoute } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: #000;
+    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     height: 80px;
-
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,14 +30,14 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkRoute)`
-    color: red;
+    color: #fff;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
-    font-weght: bold;
+    font-weight: bold;
     text-decoration: none;
 `;
 
